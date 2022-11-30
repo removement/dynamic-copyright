@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/dynamic-copyright",
+	"version": "0.1.0",
+	"title": "Dynamic Copyright",
+	"category": "widgets",
+	"icon": "calendar",
+	"description": "A simple copyright block which contains the dynamic year. Never update the year in your footer again.",
+	"attributes": {
+		"copyrightStatement": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"html": false,
+		"color": {
+			"gradients": false,
+			"link": true,
+			"background": false,
+			"text": true
+		},
+		"spacing": {
+			"blockGap": false,
+			"margin": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"padding": true
+			}
+		},
+		"__experimentalLayout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"allowEditing": false
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"textdomain": "dynamic-copyright",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
